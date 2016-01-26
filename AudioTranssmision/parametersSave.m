@@ -13,17 +13,17 @@
 
 clc; clear all;
 
-global Fs, Fs = 44100;
-global Fm0, Fm0 = 4000;
-global Fm1, Fm1 = 2000;
+global Fs, Fs = 44100;  % smapling frequency
+global Fm0, Fm0 = 4000; % frequency for 0 bit
+global Fm1, Fm1 = 2000; % frequency for 1 bit
 
-global tBitHandshake, tBitHandshake = 1;
-global tBit, tBit = 0.1;
-global hsThres, hsThres = 500;
-global pktThres, pktThres = 0.1;
+global tBitHandshake, tBitHandshake = 1; % time for handshake bit
+global tBit, tBit = 0.1;                 % time for data bit
+global hsThres, hsThres = 500;           % handshake threshold
+global pktThres, pktThres = 0.1;         % packet data threshold
 
-global initCode, initCode = [true false];
-global metadataPktLen = 24;
+global initCode, initCode = [true false]; % initial code of packets
+global metadataPktLen = 24; % metadata packet length
 
 isOctave = exist('OCTAVE_VERSION', 'builtin') ~= 0;
 if isOctave
