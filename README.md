@@ -1,7 +1,7 @@
 # Audio-Transmission
 Transmits a binary (black-and-white) image between two computers using sound.
 
-## Explanation:
+### Explanation:
 One computers wants to transmit a (small) binary image between to another
 computer via audio signals. the transmitter computer "packetize" the image 
 converting every column of the image in a individual packet, and then into an 
@@ -12,13 +12,13 @@ request the next packet, if the data is corrupted, it request the same packet
 the size (length and width) of the image, allowing the transmission of images of
 variable size (up to 255 x 255).  
 
-## How to use:
+### How to use:
 1. Run saveParamenters.m on both, transmitter and receiver computers (this save 
 the correct parameters in parameters.mat)
 2. Run transmitter.m and receiver.m in the corresponding computer (order is 
 irrelevant). 
 
-## Features
+### Features
 - Modulation: FSK, 2 frequencies
   * Fm0: 4000 [Hz]
   * Fm1: 2000 [Hz]
@@ -29,7 +29,7 @@ irrelevant).
 - Error detection algorithm: Fletcher’s Checksum
 - Overhead packets: 7 bits
 
-## Author Information
+### Author Information
 Author: Franco Curotto
 
 Email: francocurotto@gmail.com
