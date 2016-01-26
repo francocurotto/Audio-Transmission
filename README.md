@@ -13,8 +13,7 @@ the size (length and width) of the image, allowing the transmission of images of
 variable size (up to 255 x 255).  
 
 ### How to use:
-1. Run saveParamenters.m on both, transmitter and receiver computers (this save 
-the correct parameters in parameters.mat)
+1. Change the parameters in the saveParameters.m script (no need to run).
 2. Run transmitter.m and receiver.m in the corresponding computer (order is 
 irrelevant). 
 
