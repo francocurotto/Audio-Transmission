@@ -28,7 +28,7 @@ irrelevant).
 - Synchronization : 3 Way Handshake
 - Error detection algorithm: Fletcher’s Checksum
 - Overhead packets: 7 bits
-- Works in MATLAB(R) and GNU Octave
+- Works in MATLAB(R) and GNU Octave (in Octave needs signal and communacations packages).
 
 ### Author Information
 Author: Franco Curotto
