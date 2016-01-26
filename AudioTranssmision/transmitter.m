@@ -40,7 +40,6 @@ metadataPkt = genPkt([de2bi(imgRows, 8) de2bi(imgCols, 8)], 0);
 
 % initial handshake
 hsResp = handshakeTx();
-%disp(metadataPkt);
 
 % metadata packet transmission
 while true
