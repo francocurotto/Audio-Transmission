@@ -39,16 +39,11 @@ function detection = recAndDetectHs(recObj)
   y = getaudiodata(recObj);
   % make correlations
   corrFm0 = xcorr(Fm0temp, y);
-  %corrFm0 = fliplr(corrFm0(1:sampBit+length(y)));
   corrFm1 = xcorr(Fm1temp, y);
-  %corrFm1 = fliplr(corrFm1(1:sampBit+length(y)));
-%   figure(1); plot(corrFm1); hold on; plot(corrFm0, 'g'); hold off;
   % make detection desicion
   detection = NaN;
   maxFm0 = max(corrFm0);
   maxFm1 = max(corrFm1);
-  %maxFm0 
-  %maxFm1
   maxFm = max(maxFm0, maxFm1);
   if maxFm > hsThres
     if maxFm0 > maxFm1
