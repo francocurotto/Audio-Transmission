@@ -11,8 +11,6 @@
 % You should have received a copy of the GNU General Public License
 % along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-clc; clear all;
-
 global Fs, Fs = 44100;  % smapling frequency
 global Fm0, Fm0 = 4000; % frequency for 0 bit
 global Fm1, Fm1 = 2000; % frequency for 1 bit
