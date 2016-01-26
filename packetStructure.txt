@@ -1,0 +1,19 @@
+- Metapacket (24 bits):
+
+ 0 1 2 3 4 5 6 7 0 1 2 3 4 5 6 7 0 1 2 3 4 5 6 7 
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+|IC |  EDC  |S| Image Length  | Image Width   |D|
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+- Data packet (ovrehead: 8 bits):
+
+ 0 1 2 3 4 5 6 7 0 1 2 3      n
++-+-+-+-+-+-+-+-+-+-+-+-     +-+
+|IC |  EDC  |S|   Data   ... |D|
++-+-+-+-+-+-+-+-+-+-+-+-     +-+
+
+- Nomenclature
+  * IC: Initial code (10)
+  * EDC: Error detection code (4 bits)
+  * S: Sequence number (1 bit)
+  * D: Dummy (Same as last bit, for robustness)
