@@ -42,13 +42,11 @@ function rawData = packetRx(pktLen)
   corrFm0 = fliplr(corrFm0(1:sampBit+length(y)));
   corrFm1 = xcorr(Fm1temp, y);
   corrFm1 = fliplr(corrFm1(1:sampBit+length(y)));
-  %figure(1); plot(corrFm0); hold on; plot(corrFm1, 'g');
   % filter correlations
   corrFm0Filt = abs(hilbert(corrFm0));
   corrFm1Filt = abs(hilbert(corrFm1));
   corrFm0Filt = corrFm0Filt./max(corrFm0Filt);
   corrFm1Filt = corrFm1Filt./max(corrFm1Filt);
-  %figure(2); plot(corrFm0Filt); hold on; plot(corrFm1Filt, 'g');
   % detect start of packet (initial bit)
   try
     overThres = corrFm1Filt > pktThres;
@@ -64,9 +62,4 @@ function rawData = packetRx(pktLen)
   end
   
   disp(strcat(['Received: ', num2str(rawData)]));
-  %hold on; 
-  %for i=1:pktLen-1
-  %  plot([bitPos(i) bitPos(i)],[0 1], 'r'); 
-  %end; 
-  %hold off;
 end
