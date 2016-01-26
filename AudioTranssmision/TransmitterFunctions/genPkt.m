@@ -33,7 +33,7 @@ function packet = genPkt(data, seq)
   data = [seqBit data];
   
   % generate EDC
-  [EDC,~] = fletcherVerification(data);
+  [EDC, ~] = genEDC(data);
   
   % add initial code, EDC, and dummy to the data
   packet = [initCode EDC data dummy];
