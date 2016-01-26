@@ -39,7 +39,7 @@ function clean = EDCCheck(packet)
   end 
   
   % check for EDC error
-  [~, computedEDC] = fletcherVerification(data);
+  [~, computedEDC] = genEDC(data);
   if computedEDC ~= EDCRx
     clean = false;
   end
