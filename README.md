@@ -34,5 +34,3 @@ irrelevant).
 Author: Franco Curotto
 
 Email: francocurotto@gmail.com
-
-Thanks to Ivan Castro for the implementation of the Fletcher Checksum 
