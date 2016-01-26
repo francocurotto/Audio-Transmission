@@ -27,6 +27,7 @@ if isOctave
 end
 
 % saved parameters
+parametersSave;
 load('parameters.mat');
 
 % other variables
