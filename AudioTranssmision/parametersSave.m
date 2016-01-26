@@ -23,7 +23,7 @@ global hsThres, hsThres = 500;           % handshake threshold
 global pktThres, pktThres = 0.1;         % packet data threshold
 
 global initCode, initCode = [true false]; % initial code of packets
-global metadataPktLen = 24; % metadata packet length
+global metadataPktLen = 24;               % metadata packet length
 
 isOctave = exist('OCTAVE_VERSION', 'builtin') ~= 0;
 if isOctave
