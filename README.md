@@ -15,11 +15,11 @@ variable size (up to 255 x 255).
 ## How to use:
 1. Run saveParamenters.m on both, transmitter and receiver computers (this save 
 the correct parameters in parameters.mat)
-2. Run transmitter.m and receiver.m in the correspondent computer (order is 
+2. Run transmitter.m and receiver.m in the corresponding computer (order is 
 irrelevant). 
 
 ## Features
-- Modulation: FSK, 2 frecuencies
+- Modulation: FSK, 2 frequencies
   * Fm0: 4000 [Hz]
   * Fm1: 2000 [Hz]
 - Sampling frecuency: 44100 [Hz]
