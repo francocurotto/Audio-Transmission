@@ -40,7 +40,6 @@ handshakeRx(true);
 % metadata packet reception
 while true
   rawMetadata = packetRx(24);
-  %disp(rawMetadata);
   clean = EDCCheck(rawMetadata);
   if clean
     nPkt = bi2de(rawMetadata(8:15));
@@ -74,7 +73,7 @@ while true
   end
 end
 
-%show image
+% show image
 h = figure(1);
 imshow(recImage);
 imgName = strrep(strcat(datestr(now), '.png'), ':', '-'); 
