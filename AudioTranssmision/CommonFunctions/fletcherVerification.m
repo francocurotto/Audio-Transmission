@@ -11,22 +11,9 @@
 % You should have received a copy of the GNU General Public License
 % along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-function [ver_digit,remainder] = fletcherVerification(data)
-    
-    data_half = floor(length(data)/2);
-
-    data1 = data(1:data_half);
-    data2 = data(data_half+1:length(data));
-
-    dec_num1 = bi2de(data1);
-    dec_num2 = bi2de(data2);
-
-    sum_dec = dec_num1 + dec_num2;
-
-    remainder = mod(sum_dec,16);
-
-    ver_digit = de2bi(remainder, 4); % Verificacion F
-    
-    ver_digit = logical(ver_digit);
-
+function [EDCbin, EDCdec] = genEDC(data)
+  
+  EDCdec = mod(bi2de(data), 8);
+  EDCbin = de2bi(EDCdec);
+  
 end
