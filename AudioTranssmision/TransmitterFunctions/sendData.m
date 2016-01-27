@@ -11,12 +11,12 @@
 % You should have received a copy of the GNU General Public License
 % along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+function sendData(data)
 %% Function send data
 %  Transform the data into a signal and send it to the reciever
 %
 %  Inputs:
 %  data: data to send
-function sendData(data)
   
   % global variables
   global Fs;
