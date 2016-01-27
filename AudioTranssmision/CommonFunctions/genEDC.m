@@ -12,6 +12,16 @@
 % along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 function [EDCbin, EDCdec] = genEDC(data)
+%% Generate Error Detection Code
+%  Generate the EDC of 4 bits for specific string (array) of data. The 
+%  EDC is a 4 bit number
+%
+% Inputs: 
+% data: data in binary
+%
+% Outputs: 
+% EDCbin: Error Detection Code in binary
+% EDCdec: Error Detection Code in decimal
   
   EDCdec = mod(bi2de(data), 8);
   EDCbin = de2bi(EDCdec);
