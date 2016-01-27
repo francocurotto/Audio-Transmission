@@ -11,16 +11,15 @@
 % You should have received a copy of the GNU General Public License
 % along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+function clean = EDCCheck(packet)
 %% Function EDC Check
-%  Check if packet contains error, using the error correction check
-%  (Fletcher verification)
+%  Check if packet contains error, using the error detection check
 %
 %  Inputs:
 %  packet: packet as binary array
 %
 %  Outputs:
 %  clean: true: no error detected, false: error detected
-function clean = EDCCheck(packet)
   
   % global variables
   global initCode;
