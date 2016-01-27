@@ -20,7 +20,7 @@
 %  recObj: record object
 %
 %  Outputs:
-%  detection: true: Fm1, flase Fm0, Nan: neither
+%  detection: true: Fm1, false Fm0, Nan: neither
 function detection = recAndDetectHs(recObj)
   
   % global variables
