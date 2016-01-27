@@ -11,6 +11,7 @@
 % You should have received a copy of the GNU General Public License
 % along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+function detection = recAndDetectHs(recObj)
 %% Function record and detect handshake
 %  Record an audio sample, and detect if in the sample there was
 %  a 0, a 1 or neither (neither of the frquencies pass the threshold).
@@ -21,7 +22,6 @@
 %
 %  Outputs:
 %  detection: true: Fm1, false Fm0, Nan: neither
-function detection = recAndDetectHs(recObj)
   
   % global variables
   global Fs;
