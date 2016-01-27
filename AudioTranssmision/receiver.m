@@ -22,8 +22,8 @@ addpath('CommonFunctions');
 isOctave = exist('OCTAVE_VERSION', 'builtin') ~= 0;
 if isOctave
   more off;
-  pkt load signal;
-  pkt load communications;
+  pkg load signal;
+  pkg load communications;
 end
 
 % saved parameters
