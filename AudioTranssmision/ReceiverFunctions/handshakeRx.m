@@ -11,6 +11,7 @@
 % You should have received a copy of the GNU General Public License
 % along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+function handshakeRx(type)
 %% Function handshake reception
 %  Initiate a positive or negative 3 way handshake with the transmitter.
 %  Positive handshake means the last packet was correctly recived
@@ -19,8 +20,7 @@
 %  its waiting for the same packet to be retransmitted
 %
 %  Inputs:
-%  type: true = positive handshake, false = negative handshake
-function handshakeRx(type)
+%  type: true = positive handshake, false = negative handshake  
   
   % global variables
   global Fs;
