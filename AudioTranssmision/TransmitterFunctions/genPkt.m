@@ -11,8 +11,9 @@
 % You should have received a copy of the GNU General Public License
 % along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+function packet = genPkt(data, seq)
 %% Function generate packet
-%  Creates a packet for transmission, given the data
+%  Creates a packet for transmission, given the data.
 %
 %  Inputs:
 %  Data: data to packetize
@@ -20,7 +21,6 @@
 %
 %  Outputs:
 %  packet: final packet
-function packet = genPkt(data, seq)
   
   % global variables
   global initCode;
