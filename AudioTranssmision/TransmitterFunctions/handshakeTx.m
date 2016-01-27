@@ -11,13 +11,13 @@
 % You should have received a copy of the GNU General Public License
 % along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+function type = handshakeTx()
 %% Function handshake transmission
 %  Follows a 3 way handshake initiated by the receptor, and
 %  detect the handshake type (positive or negative).
 %
 %  Output:
 %  type: true = positive handshake, false = negative handshake
-function type = handshakeTx()
   
   % global variables
   global Fs;
