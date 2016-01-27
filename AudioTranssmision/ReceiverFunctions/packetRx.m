@@ -11,6 +11,7 @@
 % You should have received a copy of the GNU General Public License
 % along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+function rawData = packetRx(pktLen)
 %% Function packet receive
 %  Record the audio of the data transmission and convert it
 %  into a binary array
@@ -20,7 +21,6 @@
 %
 %  Outputs:
 %  rawData: data binary array
-function rawData = packetRx(pktLen)
   
   % global variables
   global Fs;
