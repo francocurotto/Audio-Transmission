@@ -11,14 +11,17 @@
 % You should have received a copy of the GNU General Public License
 % along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+function signal = genSignal(pkt, tBit)
 %% Function generate signal
 %  Generate an audio signal to transmit a packet of data,
 %  given audio information
 %
 %  Inputs:
 %  pkt: packet to transform in signal
-%  tBit: time of bitand
-function signal = genSignal(pkt, tBit)
+%  tBit: time of bita
+%
+% Outputs:
+% signal: audio signal
   
   % global variables
   global Fs;
