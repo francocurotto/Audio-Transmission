@@ -25,7 +25,7 @@ irrelevant).
 - Maximum image size: 255 x 255 [px]
 - Packetization : By rows
 - Synchronization : 3 Way Handshake
-- Error detection algorithm: Fletcher’s Checksum
+- Error detection algorithm: 4 bits modulo
 - Overhead packets: 8 bits
 - Works in MATLAB(R) and GNU Octave (in Octave needs signal and communications packages).
 
