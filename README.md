@@ -2,7 +2,7 @@
 Transmits a binary (black-and-white) image between two computers using sound.
 
 ### Explanation:
-One computers wants to transmit a (small) binary image between to another
+One computers wants to transmit a (small) binary image to another
 computer via audio signals. the transmitter computer "packetize" the image 
 converting every column of the image in a individual packet, and then into an 
 audio signal that is reproduced by the speaker. The second computer receives the
